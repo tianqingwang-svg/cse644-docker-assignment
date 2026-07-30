@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  web-backend:
+    image: nginx:alpine
+    container_name: cse644-nginx-backend
+    volumes:
+      - ./nginx/index.html:/usr/share/nginx/html/index.html:ro
+    networks:
+      - proxy-net
+
+  haproxy-frontend:
+    image: haproxy:alpine
+    container_name: cse644-haproxy-proxy
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro
+    depends_on:
+      - web-backend
+    networks:
+      - proxy-net
+
+networks:
+  proxy-net:
+    driver: bridge

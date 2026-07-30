@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE644 Cloud Computing - Customized Nginx Server</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --primary: #38bdf8;
+            --accent: #818cf8;
+            --text: #f8fafc;
+            --muted: #94a3b8;
+            --success: #34d399;
+        }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            background-color: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+            max-width: 650px;
+            width: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .badge {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: #000;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+        h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2rem;
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        p {
+            color: var(--muted);
+            line-height: 1.6;
+        }
+        .status-box {
+            margin-top: 1.5rem;
+            background-color: #0f172a;
+            padding: 1.25rem;
+            border-radius: 10px;
+            border-left: 4px solid var(--success);
+        }
+        .status-box h3 {
+            margin: 0 0 0.5rem 0;
+            color: var(--success);
+            font-size: 1rem;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+        .info-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 10px;
+            border-radius: 6px;
+        }
+        .info-label {
+            color: var(--muted);
+            font-size: 0.8rem;
+        }
+        .info-value {
+            color: var(--text);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="badge">Requirement #5</span>
+        <h1>Customized Nginx Web Server</h1>
+        <p>This web page is served from a custom Docker container running Nginx, created for the Cloud Computing CSE644 Docker Assignment.</p>
+        
+        <div class="status-box">
+            <h3>✓ Container Status: Active & Operational</h3>
+            <p style="margin:0; font-size:0.9rem;">Custom Nginx Dockerfile verified and running successfully.</p>
+        </div>
+
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="info-label">Course</div>
+                <div class="info-value">CSE644 Cloud Computing</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Base Image</div>
+                <div class="info-value">nginx:alpine</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Customization</div>
+                <div class="info-value">Custom index.html</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Deployed Via</div>
+                <div class="info-value">Docker Container</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

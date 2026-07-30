@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Proxied Nginx via HAProxy - CSE644 Requirement #7</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #0f172a; color: #f8fafc; padding: 40px; text-align: center; }
+        .box { background: #1e293b; max-width: 600px; margin: auto; padding: 30px; border-radius: 12px; border: 1px solid #334155; }
+        h1 { color: #f59e0b; margin-bottom: 10px; }
+        .tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 15px; font-weight: bold; }
+        p { color: #94a3b8; }
+        .flow { background: #0f172a; padding: 15px; border-radius: 8px; font-family: monospace; color: #10b981; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <span class="tag">HAProxy Reverse Proxy Active</span>
+        <h1>Nginx Backend Response</h1>
+        <p>This request was received by <strong>HAProxy</strong> on port 8080 and proxied to the <strong>Nginx</strong> web server backend.</p>
+        <div class="flow">
+            Client Request ➔ HAProxy (Port 8080) ➔ Nginx Backend (Port 80) ➔ 200 OK Response
+        </div>
+    </div>
+</body>
+</html>
