@@ -2,7 +2,7 @@
 
 **Course:** Cloud Computing (CSE644)  
 **Assignment:** Docker Practical Skills Assignment  
-**Student Name:** [Your Name]  
+**Student Name:** tianqing wang  
 **Docker Hub Username:** `tianqing24`  
 **GitHub Username:** `tianqingwang-svg`  
 **GitHub Repository:** `https://github.com/tianqingwang-svg/cse644-docker-assignment`  
@@ -14,7 +14,7 @@
 
 | Required Item | Submission Link / Artifact |
 | :--- | :--- |
-| **Student Name** | [Your Name] |
+| **Student Name** | tianqing wang |
 | **Docker Hub Username** | `tianqing24` |
 | **GitHub Username** | `tianqingwang-svg` |
 | **Docker Hub Profile** | [Docker Hub Profile](https://hub.docker.com/u/tianqing24) |
