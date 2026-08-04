@@ -1,0 +1,32 @@
+[
+  {
+    "name": "gen_ai.rca_agent.generate_report",
+    "timestamp": "2025-10-01T11:36:00Z",
+    "duration_ms": 342.15,
+    "attributes": {
+      "gen_ai.system": "anthropic",
+      "gen_ai.request.model": "claude-haiku-4-5",
+      "gen_ai.usage.input_tokens": 845,
+      "gen_ai.usage.output_tokens": 680,
+      "gen_ai.usage.total_tokens": 1525,
+      "gen_ai.usage.cost_usd": 0.012735,
+      "gen_ai.prompt": "Generate a detailed incident Root Cause Analysis report for this telemetry...",
+      "gen_ai.completion": "# 🚨 Incident Root Cause Analysis Report\n\n**Incident ID**: `INC-202510011120`..."
+    }
+  },
+  {
+    "name": "gen_ai.log_analyzer.process_window",
+    "timestamp": "2025-10-01T11:36:05Z",
+    "duration_ms": 240.0,
+    "attributes": {
+      "gen_ai.system": "anthropic",
+      "gen_ai.request.model": "claude-haiku-4-5",
+      "gen_ai.usage.input_tokens": 800,
+      "gen_ai.usage.output_tokens": 180,
+      "gen_ai.usage.total_tokens": 980,
+      "gen_ai.usage.cost_usd": 0.005100,
+      "gen_ai.prompt": "Analyze log chunk (3000 chars)",
+      "gen_ai.completion": "Anomalies detected in log window."
+    }
+  }
+]

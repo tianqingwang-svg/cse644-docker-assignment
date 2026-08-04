@@ -1,0 +1,12 @@
+2025-10-01T08:00:00Z [INFO] user-service: GET /api/v1/profile 200 OK latency=110ms
+2025-10-01T08:01:00Z [DEBUG] auth-service: Validated JWT token for user_id=usr_501
+2025-10-01T08:02:00Z [INFO] payment-service: Processed payment transaction id=tx_1002 status=SUCCESS latency=145ms
+2025-10-01T11:20:00Z [CRITICAL] db-cluster-01: Connection pool exhausted (max_connections=100 reached).
+2025-10-01T11:21:00Z [ERROR] payment-service: Timeout waiting for database connection after 30000ms. Transaction aborted.
+2025-10-01T11:22:00Z [ERROR] payment-service: Timeout waiting for database connection after 30000ms. Transaction aborted.
+2025-10-01T11:24:00Z [ERROR] user-service: HTTP 500 Internal Server Error - Failed to acquire auth token from database.
+2025-10-01T11:25:00Z [ERROR] user-service: HTTP 500 Internal Server Error - Failed to acquire auth token from database.
+2025-10-01T11:28:00Z [WARN] auth-service: Thread pool saturation (active_threads=200/200). Request queue depth: 450.
+2025-10-01T11:31:00Z [ERROR] payment-service: OutOfMemoryError in ConnectionManager worker thread.
+2025-10-01T11:35:00Z [CRITICAL] db-cluster-01: Primary node high CPU (92%). Failover triggered.
+2025-10-01T11:36:00Z [INFO] db-cluster-01: Connection pool recovered. Active connections: 25/100
